@@ -1,7 +1,3 @@
-Core/Telegram_bot/__pycache__
-Core/Hash_tools/__pycache__
-Core/Flask_Core/__pycache__
-Core/Database/__pycache__
-Core/__pycache__
+__pycache__
 /database
 info.txt

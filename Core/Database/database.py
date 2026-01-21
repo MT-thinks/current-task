@@ -20,7 +20,7 @@ class Database:
             case "tasks":
                 self.__create_tasks_db()
             case _:
-                raise ValueError("Unknown name spread_sheet")
+                raise ValueError("Неизвестное название базы данных")
         
         
     def user_info(self, id: int) -> dict[str, str]:
@@ -108,6 +108,6 @@ class Database:
         """Подключает бд и создает папку database"""
         
         if "database" not in os.listdir():
-            os.mkdir("./database")
+            os.mkdir(Database.default_path)
         
         return sqlite3.connect(os.path.join(Database.default_path, spread_sheet))

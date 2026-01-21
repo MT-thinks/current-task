@@ -9,8 +9,8 @@ def main_loop():
             time.sleep(1)
     except KeyboardInterrupt:
         print("Сервер остановлен")
-        
-        
+
+
 # ссылку на базы данных необходимо будет передавать в run() бота и сайта
 db_users = database.Database("users") 
 db_tasks = database.Database("tasks")
